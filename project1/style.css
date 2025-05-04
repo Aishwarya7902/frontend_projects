@@ -60,3 +60,72 @@ html,body{
 #nav h2:nth-last-child(1){
     width: 10%;
 }
+
+#center{
+    height: 90%;
+    padding: 4vw;
+    width: 100%;
+    position: relative;
+    /* background-color: coral; */
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+    background-color: cornflowerblue;
+    position: relative;
+}
+
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    height: 60%;
+    width: 100%;
+    /* background-color: crimson; */
+    position: absolute;
+    bottom: 0;
+    padding: 3vw;
+    color: #fff;
+}
+
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+#over1 h1{
+    font-family: 'Monument';
+    font-size: 3vw;
+    
+}
+#over1 h2{
+    font-size: 1vw;
+    padding: 2vw ;
+    /* background-color: blueviolet; */
+    border-radius: 50%;
+    border: 1px solid #fff;
+    
+}
+
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding: 1.5vw 0;
+}
+
+#over2 img{
+    width: 4vw;
+}
+
+#over2 h4{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
