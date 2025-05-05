@@ -142,7 +142,7 @@ body {
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
-    
+
 }
 
 #container {
@@ -155,7 +155,7 @@ body {
     animation-duration: 9s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-   
+
 }
 
 #scroll img {
@@ -164,20 +164,22 @@ body {
     width: 12vw;
     border-radius: 50%;
     object-fit: cover;
-    object-position:top center;
-    margin: 0 2vw; /* Optional spacing between images */
+    object-position: top center;
+    margin: 0 2vw;
+    /* Optional spacing between images */
 }
 
 @keyframes anime {
-    from{
+    from {
         transform: translateX(0);
     }
-    to{
+
+    to {
         transform: translateX(-100%);
     }
 }
 
-#alphabets{
+#alphabets {
     height: 11vh;
     width: 100%;
     display: flex;
@@ -190,7 +192,7 @@ body {
 }
 
 
-#alphabets h5{
+#alphabets h5 {
     font-size: 2vw;
     text-transform: uppercase;
     font-weight: 400;
@@ -201,7 +203,7 @@ body {
 
 }
 
-#alphabets h6{
+#alphabets h6 {
     font-size: 1.5vw;
     text-transform: uppercase;
     font-weight: 400;
@@ -215,10 +217,70 @@ body {
     transition: all ease 0.2s;
 }
 
-#alphabets h6:hover{
+#alphabets h6:hover {
     border: 1px solid #000;
 }
-#page2{
+
+#page2 {
     height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+
+#page2-part1 {
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1496440737103-cd596325d314?w=600&auto=format&fit=crop&q=100&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTB8fGZlbWFsZXxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position:top center;
+}
+
+#page2-part2 {
+    height: 100%;
+    width: 45%;
+   
+}
+
+#page2-part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+#part2-text{
+    height: 30%;
+    width: 100%;
+    /* background-color: crimson; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw;
+    gap: 3vw;
+}
+
+
+#heading{
+  height: 100%;
+  width: 50%;
+  margin-right: 2vw;
+}
+
+#heading h5{
+    font-size: 1.7vw;
+    font-weight: 600;
+    
+}
+
+#para{
+    height: 100%;
+    width: 40%;
+}
+
+#para p{
+    font-size: 1.5vw;
+    font-weight: 400;
 }
