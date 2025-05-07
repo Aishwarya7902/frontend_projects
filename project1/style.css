@@ -350,7 +350,8 @@ body {
     
     width: 100%;
     height: 100%;
-    padding: 5vw 10vw;
+    padding: 2vw 10vw;
+    
 }
 
 #page4 img {
@@ -360,3 +361,32 @@ body {
     object-position:10% 55%;
     /* display: block; */
 }
+
+#page5{
+    height: 100%;
+    width: 100%;
+    background-color: rebeccapurple;
+    position: relative;
+    padding: 5vw 4vw;
+}
+
+#page5>h1{
+    text-align: center;
+    font-family: 'Monument';
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-bottom: 2vw;
+}
+
+.elem{
+    height: 16vh;
+    width: 100%;
+    background-color: lightcoral;
+    border-top: 2px solid #000;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid #000;
+}
+
+
