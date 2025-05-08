@@ -9,6 +9,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    background-color: #F8F8F8;
 }
 
 #main {
@@ -365,7 +366,7 @@ body {
 #page5{
     height: 100%;
     width: 100%;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     position: relative;
     padding: 5vw 4vw;
 }
@@ -376,17 +377,80 @@ body {
     text-transform: uppercase;
     font-size: 3vw;
     font-weight: 600;
-    margin-bottom: 2vw;
+    margin-bottom: 5vh;
+    
 }
 
 .elem{
     height: 16vh;
     width: 100%;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    position: relative;
+    transition: all ease 0.7s;
 }
+
+.elem:hover{
+    background-color: #d6d0d0;
+}
+
+.elem img{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    border-radius: 50%;
+    left: 20%;
+    object-fit: cover;
+    object-position:top center;
+    
+}
+
 .elem:nth-last-child(1){
     border-bottom: 2px solid #000;
+}
+
+.elem h4{
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 6%;
+
+}
+.elem .elem-part2{
+    /* background-color: lightslategray; */
+    width: 50%;
+}
+
+.elem-part2 h1{
+    font-size: 2.7vw;
+    font-weight: 500;
+}
+
+.elem-part2 h5{
+    font-size: 1vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.special{
+    position: absolute;
+    left: 20%;
+}
+
+
+.special h1{
+    font-size: 2.7vw;
+    font-weight: 500;
+}
+
+.special h5{
+    font-size: 1vw;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 
