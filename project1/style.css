@@ -454,3 +454,112 @@ body {
 }
 
 
+#page6{
+    height: 100%;
+    width: 100%;
+    /* background-color: lightpink; */
+    padding: 2vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page6 #left{
+    height: 100%;
+    width: 40%;
+    /* background-color: lightslategray; */
+    margin-right: 10%;
+}
+
+#page6 #left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position:center;
+}
+
+#page6 #right{
+    height: 100%;
+    width: 50%;
+    /* background-color: lightcyan; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+#page6 #right #heading{
+    height: 10%;
+    width: 100%;
+    /* background-color: lightgreen; */
+}
+#page6 #right #desc{
+    height: 25%;
+    width: 100%;
+    /* background-color: lightsalmon; */
+}
+#page6 #right #para{
+    height: 15%;
+    width: 100%;
+    /* background-color: rgb(32, 62, 101); */
+}
+#page6 #right #images{
+    height: 40%;
+    width: 100%;
+    /* background-color: rgb(224, 228, 17); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page6 #heading h1{
+    font-size: 3vw;
+    text-align: left;
+    font-weight: 600;
+    font-family: 'Monument';
+    text-transform: uppercase;
+}
+
+#right #desc h5{
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+#right #para p{
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+#right #images-left{
+    height: 100%;
+    width: 50%;
+    
+    /* background-color: rebeccapurple; */
+}
+
+#right #images-right{
+    height: 100%;
+    width: 46%;
+    /* background-color:lightseagreen; */
+}
+
+
+#images-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#images-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
