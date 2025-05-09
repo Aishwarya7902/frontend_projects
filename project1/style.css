@@ -940,8 +940,77 @@ body {
        
     }
     
+    /*making page 2 responsive*/
+
+    #page2 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2vw 5vw;
+    }
+    
+    #page2-part1 {
+        height: 100%;
+        width: 50%;
+        background-image: url(https://images.unsplash.com/photo-1496440737103-cd596325d314?w=600&auto=format&fit=crop&q=100&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTB8fGZlbWFsZXxlbnwwfHwwfHx8MA%3D%3D);
+        background-size: cover;
+        background-position: top center;
+        border-radius: 2px;
+    }
+    
+    #page2-part2 {
+        height: 100%;
+        width: 45%;
+        
+        
+    
+    }
+    
+    #page2-part2 img {
+        height: 50%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top center;
+        border-radius: 2px;
+        margin-bottom: 4vw;
+    }
+    
+    #part2-text {
+        height: 50%;
+        width: 100%;
+        /* background-color: crimson; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1vw;
+        gap: 3vw;
+       
+    }
     
     
+    #heading {
+        height: 100%;
+        width: 50%;
+        margin-right: 2vw;
+    }
+    
+    #heading h5 {
+        font-size: 3vw;
+        font-weight: 600;
+    
+    }
+    
+    #para {
+        height: 100%;
+        width: 40%;
+    }
+    
+    #para p {
+        font-size: 2.7vw;
+        font-weight: 400;
+    }
     
     
     
