@@ -42,6 +42,29 @@ body {
     font-family: 'Monument';
     font-size: 40px;
     letter-spacing: -1px;
+    position: relative;
+}
+
+#nav h1::after{
+    content: '©';
+    font-family: gilroy;
+    font-weight: 400;
+    color: #636060;
+    font-size: 1.5vw;
+    position: absolute;
+    top:10%;
+    right: -7%;
+}
+#nav h1::before{
+    content: 'model management';
+    font-family: gilroy;
+    font-weight: 100;
+    font-size: 1.3vw;
+    color: #636060;
+    letter-spacing: 0.3px;
+    position: absolute;
+    bottom:5%;
+    right: 8%;
 }
 
 #nav h2 {
@@ -695,10 +718,99 @@ body {
         transform: translateX(calc(-100% - 20px));
     }
 }
-#footer{
+#before-footer{
     height: 100%;
     width: 100%;
+    /* background-color: lightgreen; */
+    padding: 2vw;
 }
+
+#before-footer-top{
+    height: 49%;
+    width: 100%;
+    /* background-color: rgb(84, 139, 221); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+}
+
+#before-footer-bottom{
+    height: 49%;
+    width: 100%;
+    /* background-color: rgb(248, 146, 36); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+    
+}
+
+#before-footer-top h1{
+    height: 100%;
+    width: 10%;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Monument';
+    
+}
+
+#before-footer-top #top-para1{
+    height: 100%;
+    width: 40%;
+    /* background-color:lightslategray; */
+    
+    
+}
+
+#before-footer-top #top-para1 h4{
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+#before-footer-top #top-para2{
+    height: 100%;
+    width: 40%;
+    /* background-color:lightsalmon; */
+}
+
+#before-footer-top #top-para2 h4{
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+
+#before-footer-bottom-nothing{
+    height: 100%;
+    width: 10%;
+    /* background-color: lightpink; */
+}
+
+#before-footer-bottom-img1{
+    height: 100%;
+    width: 40%;
+    /* background-color:rgb(55, 204, 22); */
+}
+
+#before-footer-bottom-img2{
+    height: 100%;
+    width: 40%;
+    /* background-color:yellow; */
+}
+
+#before-footer-bottom-img1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+#before-footer-bottom-img2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
 
 
 
