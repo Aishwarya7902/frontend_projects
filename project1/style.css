@@ -810,6 +810,46 @@ body {
     object-fit: cover;
     object-position: top center;
 }
+#footer-div{
+    height: 100%;
+    width: 100%;
+    
+}
+
+#footer {
+    height:85vh;
+    width: 100%;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    
+}
+#footer h1 {
+    height: 100%;
+    width: 18%;
+    font-family: 'Monument';
+    font-size: 40px;
+    letter-spacing: -1px;
+    position: relative;
+    padding-top: 2vh;
+}
+
+#footer h2 {
+    height: 100%;
+    width: 22%;
+    padding-top: 2vh;
+    border-right: 2px solid #000;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+#footer h2:nth-last-child(1) {
+    width: 30%;
+}
 
 
 
