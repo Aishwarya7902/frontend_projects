@@ -87,6 +87,10 @@ body {
     width: 10%;
 }
 
+#nav h3{
+    display: none;
+}
+
 #center {
     height: 90%;
     padding: 4vw;
@@ -849,6 +853,42 @@ body {
 
 #footer h2:nth-last-child(1) {
     width: 30%;
+}
+
+
+
+
+@media (max-width:600px){
+    body{
+        overflow-x: hidden;
+    }
+
+    #nav {
+        height: 9vh;
+        margin-top: 20px;
+        padding: 0 5vw;  
+    }
+    
+    #nav h1 {
+        width: 40%;
+        justify-content: flex-start;
+        font-size: 24px;   
+    }
+    
+    #nav h1::after{
+        display: none;
+    }
+    #nav h1::before{
+        display: none;
+    }
+    
+    #nav h2 {
+        
+        display: none;
+    }
+    #nav h3{
+        display: block;
+    }
 }
 
 
