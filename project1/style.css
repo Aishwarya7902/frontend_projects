@@ -926,6 +926,24 @@ body {
         font-size: 2.5vw;
         font-weight: 500;
     }
+
+     /*making the scroll section responsive*/
+     #scroll {
+        height: 20vh;
+        
+    }
+
+    #scroll img {
+        
+        height: 11.5vw;
+        width: 11.5vw;
+       
+    }
+    
+    
+    
+    
+    
     
 }
 
