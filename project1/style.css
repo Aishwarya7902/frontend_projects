@@ -1033,6 +1033,46 @@ body {
 
 }
 
+/*making page 4 responsive*/ 
+#page4 {
+    
+    width: 100%;
+    height: 80%;
+    padding: 2vw 10vw;
+    
+}
+
+#page4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:10% 55%;
+    /* display: block; */
+}
+
+/*making page 6 responsive*/ 
+
+#page6{
+    
+    padding: 5vw 5vw;
+    
+}
+#page6 #heading h1{
+    font-size: 5vw;
+    
+}
+
+#right #desc h5{
+    font-size: 2.7vw;
+    
+}
+
+#right #para p{
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+
+
 }
 
 
