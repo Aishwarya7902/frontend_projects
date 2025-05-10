@@ -1012,8 +1012,27 @@ body {
         font-weight: 400;
     }
     
+   /*making page 3 responsive*/ 
+
+#circular-text {
+    height: 50%;
     
-    
+}
+
+
+
+#circular-para {
+    height: 50%;
+}
+
+
+#circular-para h3 {
+    font-size: 3.7vw;
+    font-weight: 500;
+
+
+}
+
 }
 
 
