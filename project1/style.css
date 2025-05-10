@@ -815,6 +815,8 @@ body {
     object-fit: cover;
     object-position: top center;
 }
+
+
 #footer-div{
     height: 100%;
     width: 100%;
@@ -1123,49 +1125,19 @@ body {
 /*making before-footer section responsive*/
 
 #before-footer{
-    height: 100%;
-    width: 100%;
-    /* background-color: lightgreen; */
+   
     padding: 5vw;
 }
 
-#before-footer-top{
-    height: 49%;
-    width: 100%;
-    /* background-color: rgb(84, 139, 221); */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2vw;
-}
-
-#before-footer-bottom{
-    height: 49%;
-    width: 100%;
-    /* background-color: rgb(248, 146, 36); */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2vw;
-    
-}
-
 #before-footer-top h1{
-    height: 100%;
+    
     width: 25%;
     font-size: 5vw;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-family: 'Monument';
-    
+       
 }
 
 #before-footer-top #top-para1{
-    height: 100%;
-    width: 35%;
-    /* background-color:lightslategray; */
-    
-    
+    width: 35%;  
 }
 
 #before-footer-top #top-para1 h4{
@@ -1174,9 +1146,9 @@ body {
     margin-right: 5%;
 }
 #before-footer-top #top-para2{
-    height: 100%;
+    
     width: 35%;
-    /* background-color:lightsalmon; */
+   
 }
 
 #before-footer-top #top-para2 h4{
@@ -1185,39 +1157,75 @@ body {
 }
 
 #before-footer-bottom-nothing{
-    height: 100%;
+    
     width: 0%;
-    /* background-color: lightpink; */
+   
 }
 
 #before-footer-bottom-img1{
-    height: 100%;
+    
     width: 45%;
-    /* background-color:rgb(55, 204, 22); */
+   
 }
 
 #before-footer-bottom-img2{
-    height: 100%;
+    
     width: 45%;
-    /* background-color:yellow; */
+    
 }
 
-#before-footer-bottom-img1 img{
+
+/*making footer section responsive*/
+#footer-div{
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    object-position: top center;
+    
 }
 
-#before-footer-bottom-img2 img{
-    height: 100%;
+#footer {
+    height:55vh;
     width: 100%;
-    object-fit: cover;
-    object-position: top center;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    
+}
+#footer h1 {
+    height: 100%;
+    width: 20%;
+    font-family: 'Monument';
+    font-size: 5vw;
+    letter-spacing: -1px;
+    position: relative;
+    padding-top: 20vh;
+}
+
+#footer h2 {
+    height: 100%;
+    width: 22%;
+    padding-top: 20vh;
+    border-right: 2px solid #000;
+    font-size: 2.8vw;
+    font-weight: 600;
+    
+}
+
+#footer h2:nth-last-child(1) {
+    width: 30%;
+}
+#footer h2:nth-last-child(3) {
+     padding-left: 10vw;
+}
+
 }
 
 
-}
+
+
 
 
 
