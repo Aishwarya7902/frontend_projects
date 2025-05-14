@@ -127,6 +127,38 @@ html,body{
     overflow-x: auto;
     overflow-y: hidden;
     
+    
+}
+#container{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    
+}
+#container2{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 34px));
+    }
 }
 
 #bottom::-webkit-scrollbar{
@@ -138,10 +170,28 @@ html,body{
     width: 250px;
     background-color: lightpink;
     /* border: 1px solid #000; */
-    border-radius: 20px;
+    border-radius:40px;
     display: inline-block;
     margin-right: 30px;
+    overflow: hidden;
+    position: relative;
 }
+
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.elem video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 
 /* css for page2*/
 
