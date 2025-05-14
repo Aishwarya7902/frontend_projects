@@ -38,6 +38,7 @@ html,body{
 #nav-part1 h4{
     font-size:17px;
     font-weight: 500;
+    cursor: pointer;
 }
 #nav-part2{
     width: 30%;
@@ -56,6 +57,7 @@ html,body{
     font-size: 18px;
     font-weight: 600;
     margin: 0 10px;
+    cursor: pointer;
 }
 
 #nav-part2 button:nth-child(1){
@@ -113,4 +115,45 @@ html,body{
     position: relative;
     left: 50%;
     transform: translate(-50%);
+    cursor: pointer;
+}
+
+#bottom{
+    height: 350px;
+    width: 100%;
+    background-color: lightseagreen;
+    padding: 5px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+}
+
+#bottom::-webkit-scrollbar{
+    display: none;
+}
+
+.elem{
+    height: 100%;
+    width: 250px;
+    background-color: lightpink;
+    /* border: 1px solid #000; */
+    border-radius: 20px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+/* css for page2*/
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: lightpink;
+    padding: 70px;
+}
+
+.box{
+    height: 300px;
+    width: 350px;
+    background-color: lightseagreen;
 }
