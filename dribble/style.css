@@ -119,7 +119,7 @@ html,body{
 }
 
 #bottom{
-    height: 350px;
+    height: 300px;
     width: 100%;
     /* background-color: lightseagreen; */
     padding: 5px;
@@ -185,18 +185,53 @@ html,body{
 
 /* css for page2*/
 
+
 #page2{
-    height: 100%;
+    height: auto;
     width: 100%;
-    background-color: lightseagreen;
-    padding: 8vw 0;
+    /* background-color: lightblue; */
+    padding: 5vw 0;
     
 }
-
 #page3{
-    height: 100%;
+    height: auto;
     width: 100%;
     background-color: lightpink;
+    position: relative;
+    padding: 3vw;
+    
+       
     
 }
+#page3 h1{
+    font-size: 3vw;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+.box{
+    height: 200px;
+    width: 250px;
+    background-color: lightseagreen;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
 
