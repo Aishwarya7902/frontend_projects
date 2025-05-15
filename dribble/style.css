@@ -136,7 +136,7 @@ html,body{
     padding: 2vw;
     animation-name: anime;
     animation-iteration-count: infinite;
-    animation-duration: 10s;
+    animation-duration: 50s;
     animation-timing-function: linear;
     
 }
@@ -196,7 +196,7 @@ html,body{
 #page3{
     height: 100%;
     width: 100%;
-    background-color: lightpink;
+    /* background-color: lightpink; */
     position: relative;
     padding: 3vw;
     
@@ -211,15 +211,19 @@ html,body{
 }
 
 .box{
-    height: 200px;
+    height: 300px;
     width: 250px;
     background-color: lightseagreen;
     border-radius: 10px;
     overflow: hidden;
     display: inline-block;
-    margin: 10px;
+    margin: 16px;
     position: relative;
 }
+.box:hover{
+   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.337);
+}
+
 
 .box img{
     height: 100%;
@@ -242,8 +246,27 @@ html,body{
    position: absolute;
    bottom: -40%;
    transition: all ease 0.3s;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 2vw;
+   /* font-size: 2vw; */
 }
 
+.box-bottom i{
+    background-color: white;
+    padding: 8px 9px;
+    color: #000;
+    border-radius: 50%;
+    font-size: 1vw;
+    font-weight: 600;
+}
+.box-bottom h5{
+
+    font-size: 1.5vw;
+    font-weight: 600;
+}
 .box:hover .box-bottom{
     bottom: 0;
 }
