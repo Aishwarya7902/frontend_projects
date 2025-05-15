@@ -194,7 +194,7 @@ html,body{
     
 }
 #page3{
-    height: auto;
+    height: 100%;
     width: 100%;
     background-color: lightpink;
     position: relative;
@@ -218,6 +218,7 @@ html,body{
     overflow: hidden;
     display: inline-block;
     margin: 10px;
+    position: relative;
 }
 
 .box img{
@@ -232,6 +233,19 @@ html,body{
     width: 100%;
     object-fit: cover;
 
+}
+
+.box-bottom{
+   height: 40%;
+   width: 100%;
+   background: linear-gradient(transparent,rgba(0, 0, 0, 0.719));
+   position: absolute;
+   bottom: -40%;
+   transition: all ease 0.3s;
+}
+
+.box:hover .box-bottom{
+    bottom: 0;
 }
 
 
