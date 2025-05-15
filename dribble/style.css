@@ -18,7 +18,7 @@ html,body{
 }
 
 #nav{
-    height: 120px;
+    height: 100px;
     width: 100%;
     /* background-color: lightcoral; */
     display: flex;
@@ -121,7 +121,7 @@ html,body{
 #bottom{
     height: 350px;
     width: 100%;
-    background-color: lightseagreen;
+    /* background-color: lightseagreen; */
     padding: 5px;
     white-space: nowrap;
     overflow-x: auto;
@@ -140,17 +140,7 @@ html,body{
     animation-timing-function: linear;
     
 }
-#container2{
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    padding: 2vw;
-    animation-name: anime;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    
-}
+
 
 @keyframes anime {
     from{
@@ -168,7 +158,7 @@ html,body{
 .elem{
     height: 100%;
     width: 250px;
-    background-color: lightpink;
+    /* background-color: lightpink; */
     /* border: 1px solid #000; */
     border-radius:40px;
     display: inline-block;
@@ -198,12 +188,15 @@ html,body{
 #page2{
     height: 100%;
     width: 100%;
-    background-color: lightpink;
-    padding: 70px;
+    background-color: lightseagreen;
+    padding: 8vw 0;
+    
 }
 
-.box{
-    height: 300px;
-    width: 350px;
-    background-color: lightseagreen;
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: lightpink;
+    
 }
+
