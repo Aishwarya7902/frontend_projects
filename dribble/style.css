@@ -136,7 +136,7 @@ html,body{
     padding: 2vw;
     animation-name: anime;
     animation-iteration-count: infinite;
-    animation-duration: 50s;
+    animation-duration: 30s;
     animation-timing-function: linear;
     
 }
@@ -194,7 +194,7 @@ html,body{
     
 }
 #page3{
-    height: 100%;
+    height: auto;
     width: 100%;
     /* background-color: lightpink; */
     position: relative;
@@ -272,3 +272,128 @@ html,body{
 }
 
 
+#last-page{
+    height:100%;
+    width: 100%;
+    /* background-color: lightseagreen; */
+    /* margin-top: 110vh; */
+}
+
+#last-page-top{
+    height: 70%;
+    width: 100%;
+    background-color: rgba(207, 207, 16, 0.548);
+}
+
+
+ #last-page-text{
+    height: 75%;
+    width: 100%;
+    /* background-color: lightcoral; */
+    padding-top: 2vw;
+   
+} 
+
+#last-page-text h1{
+    font-size: 4vw;
+    font-weight: 500;
+    font-family: "Source Serif 4";
+    text-align: center; 
+   
+}
+#last-page-text p{
+    font-size: 1.5vw;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1vw; 
+   
+}  
+#last-page-rest{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgb(231, 112, 20); */
+} 
+
+#last-page-rest-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2vw;
+
+}
+
+#last-page-rest button{
+    padding: 13px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 10px;
+    cursor: pointer;
+    gap: 3vw;
+}
+
+#last-page-rest button:nth-child(2){
+    background-color: lightgray;
+    color: #000;
+    
+   
+
+}
+
+#last-page-bottom{
+
+    height: 40%;
+    width: 100%;
+    /* background-color: lightsteelblue; */
+    padding: 1vw 3vw;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    
+    padding: 2vw 2vw;
+
+}
+#last-page-bottom::-webkit-scrollbar{
+    display: none;
+}
+
+#container2{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+}
+#container3{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+}
+
+.last-images{
+    height: 160px;
+    width: 130px;
+    /* background-color: lightcoral; */
+    border: 1px solid #000;
+    display: inline-block;
+    margin-right:30px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.last-images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
