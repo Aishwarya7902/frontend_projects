@@ -9,9 +9,17 @@ else
   echo "Changes detected in project1"
 fi
 
-# Check for changes in the 'project2' folder
-if git diff --quiet HEAD^ HEAD ./project2; then
-  echo "No changes in project2"
+# Check for changes in the 'dribble' folder
+if git diff --quiet HEAD^ HEAD ./dribble; then
+  echo "No changes in dribble"
 else
-  echo "Changes detected in project2"
+  echo "Changes detected in dribble"
 fi
+
+# Check for changes in the 'project3' folder
+if git diff --quiet HEAD^ HEAD ./project3; then
+  echo "No changes in project3"
+else
+  echo "Changes detected in project3"
+fi
+
