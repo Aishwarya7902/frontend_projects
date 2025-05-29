@@ -23,3 +23,10 @@ else
   echo "Changes detected in project3"
 fi
 
+# Check for changes in the 'Oblique' folder
+if git diff --quiet HEAD^ HEAD ./Oblique; then
+  echo "No changes in Oblique"
+else
+  echo "Changes detected in Oblique"
+fi
+
