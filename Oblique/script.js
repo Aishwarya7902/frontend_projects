@@ -57,11 +57,18 @@ function loadingAnimation() {
 
 loadingAnimation()
 
-document.addEventListener("mousemove", (e) => {
+function cursorAnimation(){
+    document.addEventListener("mousemove", (e) => {
 //   console.log("🖱️ Mouse moved at", e.clientX, e.clientY);
 //   document.querySelector("p").innerHTML=`cursor at ${e.clientX},${e.clientY}`
      gsap.to("#crsr",{
-        x:e.clientX,
-        y:e.clientY
+        left:e.clientX,
+        top:e.clientY
      })
 });
+
+Shery.makeMagnet("#nav-part2 h4" /* Element to target.*/, {});
+
+}
+
+cursorAnimation()
