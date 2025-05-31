@@ -33,7 +33,7 @@ function loadingAnimation() {
 
     tl.to("#loader", {
         opacity: 0,
-        delay: 4,
+        delay: 3,
         duration: 0.2,
         onComplete: function () {
         var loader = document.querySelector("#loader");
@@ -48,8 +48,20 @@ function loadingAnimation() {
     tl.from("#page1", {
         y: 1600,
         delay: 0.2,
-        duration: 0.3,
+        duration: 0.4,
         ease: Power4
+    })
+
+    tl.from("#nav",{
+        opacity:1
+       
+    })
+
+    tl.from(".hero h1",{
+        y:100,
+        stagger: 0.3,
+        duration: 0.4,
+       
     })
 
     
