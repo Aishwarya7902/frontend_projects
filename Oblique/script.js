@@ -34,7 +34,15 @@ function loadingAnimation() {
     tl.to("#loader", {
         opacity: 0,
         delay: 4,
-        duration: 0.2
+        duration: 0.2,
+        onComplete: function () {
+        var loader = document.querySelector("#loader");
+        loader.style.display = "none";
+        loader.style.pointerEvents = "none";
+
+        
+    }
+    
     })
 
     tl.from("#page1", {
@@ -44,9 +52,16 @@ function loadingAnimation() {
         ease: Power4
     })
 
-    tl.to("#loader", {
-        display: none
-    })
+    
 }
 
 loadingAnimation()
+
+document.addEventListener("mousemove", (e) => {
+//   console.log("🖱️ Mouse moved at", e.clientX, e.clientY);
+//   document.querySelector("p").innerHTML=`cursor at ${e.clientX},${e.clientY}`
+     gsap.to("#crsr",{
+        x:e.clientX,
+        y:e.clientY
+     })
+});
