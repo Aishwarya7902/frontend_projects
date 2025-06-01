@@ -164,17 +164,24 @@ html,body{
     line-height: 7vw;
 }
 
-.hero h2, .hero h3{
+.hero h2{
     font-size: 6.5vw;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 7vw;
+    border-bottom: 0.5vw solid #fff;
+    padding-bottom: 0.8vw;
+    transition: 
+    -webkit-text-stroke 0.3s ease,
+    color 0.3s ease,
+    border-bottom 0.3s ease;
 }
 
 .hero h2:hover{
     -webkit-text-stroke: 1px #fff;
     color: transparent;
     font-weight: 500;
+    border-bottom: 2px solid #ffffff00;
 }
 
 
