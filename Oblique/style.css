@@ -19,7 +19,7 @@ html,body{
     /* background-color: white; */
     border: 1px solid rgba(255, 255, 255, 0.812);
     position: fixed;
-    z-index: 9999;
+    z-index: 999;
     pointer-events: none;
     transform: translate(-50%,-50%);
     mix-blend-mode: difference;
@@ -146,6 +146,10 @@ html,body{
     margin-left: 27%;
     height: fit-content;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
 
 }
 
@@ -158,6 +162,19 @@ html,body{
     font-weight: 600;
     text-transform: uppercase;
     line-height: 7vw;
+}
+
+.hero h2, .hero h3{
+    font-size: 6.5vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7vw;
+}
+
+.hero h2:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 500;
 }
 
 
