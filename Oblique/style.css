@@ -411,3 +411,109 @@ body{
     color: transparent;
 } 
 
+
+#footer{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: lightgrey; */
+    position: relative;
+    
+}
+#footer-content{
+    width: 75vw;
+    position: relative;
+    left: 25%;
+}
+
+#footer-part1{
+    height: 25vh;
+    /* background-color: lightseagreen; */
+    display: flex;
+}
+
+#footer-content .underline{
+    height: 1px;
+    width: 100%;
+    background-color:#fff;
+    margin: 1vw 0;
+}
+
+
+#footer-part1 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 8vw;
+    
+
+}
+#footer-part1 h1:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 400;
+    font-family: 'silk serif';
+    font-style: italic;
+
+}
+#footer-part1 i{
+    font-size: 9vw;
+    margin-left: 3vw;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    
+
+}
+
+#footer-part2{
+    height: 50vh;
+    /* background-color: lightcoral; */
+    display: flex;
+    align-items:start;
+    justify-content: space-between;
+}
+
+#footer-part3{
+    height: 25vh;
+    /* background-color: lightblue; */
+    
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.box-top{
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+}
+
+.box-top h4{
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+.box-bottom{
+    
+    margin-bottom: 1vw;
+}
+
+.box-bottom h3{
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+#mail{
+    margin-right: 2vw;
+    text-decoration: underline;
+}
+
+#footer-part3 .underline{
+    height: 1px;
+    width: 100%;
+    background-color:#fff;
+    margin: 3vw 0;
+}
+
