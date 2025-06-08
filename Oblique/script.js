@@ -1,4 +1,9 @@
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
 function loadingAnimation() {
+
+
     var tl = gsap.timeline();
 
     tl.from(".line h1", {
@@ -33,53 +38,63 @@ function loadingAnimation() {
 
     tl.to("#loader", {
         opacity: 0,
-        delay: 0,
+        delay: 0.2,
         duration: 0.2,
+        onStart: () => {
+            window.scrollTo(0, 0);
+        },
         onComplete: function () {
-        var loader = document.querySelector("#loader");
-        loader.style.display = "none";
-        loader.style.pointerEvents = "none";
+            var loader = document.querySelector("#loader");
+            loader.style.display = "none";
+            loader.style.pointerEvents = "none";
+            
+           
 
-        
-    }
-    
+
+
+        }
+
     })
 
     tl.from("#page1", {
         y: 1600,
         delay: 0.2,
         duration: 0.6,
-        ease: Power4
+
+
+
     })
 
-    tl.from("#nav",{
-        opacity:1
-       
+    tl.from("#nav", {
+        opacity: 1
+
     })
 
-    tl.from("#hero1 h1,#hero2 h1, #hero3 h2 ,#hero4 h1",{
-        y:100,
+    tl.from("#hero1 h1,#hero2 h1, #hero3 h2 ,#hero4 h1", {
+        y: 100,
         stagger: 0.3,
         duration: 0.4,
-       
+
     })
 
-    
+
 }
 
 loadingAnimation()
 
-function cursorAnimation(){
-    document.addEventListener("mousemove", (e) => {
-//   console.log("🖱️ Mouse moved at", e.clientX, e.clientY);
-//   document.querySelector("p").innerHTML=`cursor at ${e.clientX},${e.clientY}`
-     gsap.to("#crsr",{
-        left:e.clientX,
-        top:e.clientY
-     })
-});
 
-Shery.makeMagnet("#nav-part2 h4" /* Element to target.*/, {});
+
+function cursorAnimation() {
+    document.addEventListener("mousemove", (e) => {
+        //   console.log("🖱️ Mouse moved at", e.clientX, e.clientY);
+        //   document.querySelector("p").innerHTML=`cursor at ${e.clientX},${e.clientY}`
+        gsap.to("#crsr", {
+            left: e.clientX,
+            top: e.clientY
+        })
+    });
+
+    Shery.makeMagnet("#nav-part2 h4" /* Element to target.*/, {});
 
 }
 
