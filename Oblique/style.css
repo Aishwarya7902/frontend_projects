@@ -216,6 +216,21 @@ body {
     border-bottom: 2px solid #ffffff00;
 }
 
+#flag{
+    height: 25vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+
+#hero3{
+    z-index: 999;
+    /* background-color: red; */
+    position: relative;
+}
+
 
 #page2 {
     height: 100vh;
@@ -230,21 +245,23 @@ body {
     position: relative;
     left: 28%;
     background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
-
+    background-size: cover;
+    background-position: center;
 
 }
 
-#video-container img {
+/* #video-container img {
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
-}
+} */
 
 #video-container video {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    opacity: 0;
 }
 
 #video-cursor {
