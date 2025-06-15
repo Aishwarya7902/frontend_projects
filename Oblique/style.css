@@ -843,7 +843,7 @@ body {
     }
 
     #page3 h1 {
-        font-size: 9vw;
+        font-size: 10vw;
         text-transform: uppercase;
         position: relative;
         margin-left: 2vw;
@@ -910,10 +910,113 @@ body {
         display: none;
 
     }
+
     .page3-circle2 {
         display: none;
 
     }
 
-    
+    #page4 {
+        min-height: 100vh;
+        width: 100%;
+        padding: 7vh 2vw;
+        position: relative;
+    }
+
+    #page4-content {
+        width: 90vw;
+        margin-left: 2%;
+        position: relative;
+    }
+
+    #page4-content>h1 {
+        font-size: 10vw;
+       
+    }
+
+    #page4-content h1::before {
+        content: "03";
+        position: absolute;
+        font-size: 5vw;
+        font-weight: 100;
+        font-family: 'silk serif';
+        left: 2%;
+        top: -60%;
+    }
+
+    #page4-content .underline {
+        height: 0.8px;
+        width: 100%;
+        background-color: #fff;
+        margin: 7vw 0;
+    }
+
+    #page4-content>p {
+        font-size: 4.9vw;
+        width: 100%;
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+    }
+
+    #page4-flex {
+
+        display: flex;
+        flex-direction: column-reverse;
+
+
+
+    }
+
+    #page4-flex img {
+        width: 100%;
+        margin-top: 10vw;
+    }
+
+    #page4-flex p {
+        margin-top: 0;
+        font-size: 3vw;
+        width: 65%;
+        margin-left: 1vw;
+    }
+
+    #page4-blue-div {
+        background-color: #3F7DF4;
+        width: 100%;
+        height: 85vh;
+        padding: 4vw;
+        position: relative;
+        margin-top: 0vw;
+        margin-left: 0vw;
+    }
+
+    .blue-div-elem {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        /* background-color:crimson; */
+        padding: 5vw 2vw;
+        border-bottom: 1px solid #ffffff94;
+
+    }
+
+    .blue-div-elem h4 {
+        font-size: 3.5vw;
+        font-weight: 500;
+    }
+
+    .blue-div-elem p {
+        width: 40%;
+        font-size: 2.7vw;
+    }
+
+    .blue-div-underline {
+        height: 0.5px;
+        width: 100%;
+        background-color: #fff;
+        margin-top: 19vw;
+
+    }
+
+
+
 }
