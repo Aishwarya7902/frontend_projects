@@ -167,17 +167,17 @@ function cursorAnimation() {
                     scale: 0.5
                 })
 
-                flag=1;
+                flag = 1;
             }
-            else{
+            else {
                 video.pause()
                 video.style.opacity = 0;
                 document.querySelector("#video-cursor").innerHTML = `<i class="ri-play-mini-fill"></i>`
                 gsap.to("#video-cursor", {
-                    scale:1
+                    scale: 1
                 })
 
-                flag=0;
+                flag = 0;
             }
 
 
@@ -199,27 +199,31 @@ function sheryAnimation() {
         gooey: true
     })
 }
+
+
+
 loadingAnimation()
 cursorAnimation()
 locomotiveAnimation()
 sheryAnimation();
 
-document.addEventListener("mousemove",function(dets){
-    gsap.to("#flag",{
-        x:dets.x,
-        y:dets.y
+
+document.addEventListener("mousemove", function (dets) {
+    gsap.to("#flag", {
+        x: dets.x,
+        y: dets.y
     })
 })
 
 
-document.querySelector('#hero3').addEventListener("mouseenter",function(){
-    gsap.to("#flag",{
-        opacity:1
+document.querySelector('#hero3').addEventListener("mouseenter", function () {
+    gsap.to("#flag", {
+        opacity: 1
     })
 })
 
-document.querySelector('#hero3').addEventListener("mouseleave",function(){
-    gsap.to("#flag",{
-        opacity:0
+document.querySelector('#hero3').addEventListener("mouseleave", function () {
+    gsap.to("#flag", {
+        opacity: 0
     })
 })

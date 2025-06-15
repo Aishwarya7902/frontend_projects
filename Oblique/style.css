@@ -625,13 +625,40 @@ body {
     padding-right: 2vw;
 }
 
+#footer-part1{
+    
+    height: 25vh;
+    display: flex;
+}
+
 #footer h1 {
     font-size: 7vw;
     width: 60vw;
     text-transform: uppercase;
     position: relative;
+    font-weight: 900;
+    line-height: 8vw;
     /* background-color: cornflowerblue; */
+    
 
+
+}
+
+#footer-part1 h1:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 400;
+    font-family: 'silk serif';
+    font-style: italic;
+
+}
+
+#footer-part1 i{
+    font-size: 9vw;
+    margin-right: 4vw;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    
 
 }
 
