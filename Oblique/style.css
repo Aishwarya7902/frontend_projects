@@ -772,7 +772,7 @@ body {
     }
 
     #flag {
-        height: 25vw;
+        height: 35vw;
         position: absolute;
         top: 0;
         left: 0;
@@ -931,7 +931,7 @@ body {
 
     #page4-content>h1 {
         font-size: 10vw;
-       
+
     }
 
     #page4-content h1::before {
@@ -948,7 +948,7 @@ body {
         height: 0.8px;
         width: 100%;
         background-color: #fff;
-        margin: 7vw 0;
+        margin: 5vw 0 10vw 0;
     }
 
     #page4-content>p {
@@ -1005,7 +1005,7 @@ body {
     }
 
     .blue-div-elem p {
-        width: 40%;
+        width: 50%;
         font-size: 2.7vw;
     }
 
@@ -1017,6 +1017,100 @@ body {
 
     }
 
+    /*responsiveness for page 5*/
+    #page5 {
+        min-height: 80vh;
+        width: 100%;
+        padding: 10vw 0;
+        position: relative;
+    }
+
+    .elem h1 {
+        font-size: 9vw;
+
+    }
+
+    .elem2 h1 {
+        font-size: 9vw;
+
+    }
+
+    /*responsiveness for footer*/
+
+    #footer { 
+        min-height: 120vh;
+        width: 100%;
+        /* background-color: lightgrey; */
+        position: relative;
+        padding: 7vw 5vw;
+    }
+
+    #footer h1 {
+        font-size: 10vw;
+        width: 80vw;
+        text-transform: uppercase;
+        position: relative;
+        margin-top: 0vw;
+        /* background-color: cornflowerblue; */
+
+
+    }
+
+    #footer h1::before {
+        content: "04";
+        position: absolute;
+        font-size: 5vw;
+        font-weight: 100;
+        font-family: 'silk serif';
+        left: 2%;
+        top: -60%;
+    }
+
+    .underline {
+        height: 1.2px;
+        width: 90vw;
+        background-color: #fff;
+        margin: 8vw 0;
+    }
+
+    #footer-div {
+        display: flex;
+        /* align-items: flex-start; */
+        /* justify-content: space-between; */
+        padding-right: 15vw;
+        padding-top: 4vw;
+        margin-bottom: 5vw;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 50%;
+        margin-bottom: 5vw;
+
+    }
+
+
+    #footer-div h6 {
+        font-size: 3.1vw;
+        margin-bottom: 5vw;
+        font-weight: 500;
+    }
+
+
+    #footer-div h5 {
+        font-size: 4vw;
+        font-weight: 500;
+
+
+    }
+
+    #footer>h5 {
+        font-weight: 500;
+        font-size: 3vw;
+        margin-top: 3vw;
+        margin-bottom: 5vw;
+        
+    }
 
 
 }
