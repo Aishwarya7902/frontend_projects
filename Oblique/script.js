@@ -186,7 +186,11 @@ function cursorAnimation() {
 
 
     })
-    Shery.makeMagnet("#nav-part2 h4");
+    Shery.makeMagnet("#nav-part2 h4", {
+        //Parameters are optional.
+        ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+        duration: 1,
+    });
 
 }
 
