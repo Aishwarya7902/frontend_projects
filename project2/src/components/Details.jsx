@@ -1,6 +1,6 @@
 import axios from "../utils/axios";
 import React, { useContext, useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import Loading from "./Loading";
 import { productContext } from "../utils/Context";
 
@@ -9,6 +9,7 @@ const Details = () => {
    const [products, setProducts] = useContext(productContext);
    const {id} = useParams();
    const [product,setProduct]=useState(null)
+   const navigate = useNavigate();
    
   // const getSingleProduct = async () => {
    
@@ -26,6 +27,12 @@ const Details = () => {
     setProduct(found || null);
   }
 }, [products, id]);
+
+ const handleDelete = () =>{
+    setProducts(products.filter(p => p.id !=id))
+    localStorage.setItem("products", JSON.stringify(products.filter(p => p.id !=id)));
+    navigate("/")
+ }
 
   return product ? (
     <div className="w-[80%] h-[90vh]  m-auto   flex items-center justify-center">
@@ -46,9 +53,9 @@ const Details = () => {
         <Link className="px-5 py-1 border rounded-full  mr-10 bg-zinc-100">
           Edit
         </Link>
-        <Link className="px-5 py-1 border rounded-full  ml-10 bg-red-50">
+        <button onClick={handleDelete} className="px-5 py-1 border rounded-full  ml-10 bg-red-50">
           Delete
-        </Link>
+        </button>
       </div>
     </div>
   ):(<Loading/>);
