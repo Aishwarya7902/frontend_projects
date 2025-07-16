@@ -50,9 +50,9 @@ const Details = () => {
         <p className=" text-xl mb-5">
          {product.description}
         </p>
-        <Link className="px-5 py-1 border rounded-full  mr-10 bg-zinc-100">
+        <button onClick={()=> navigate(`/edit/${id}`)} className="px-5 py-1 border rounded-full  mr-10 bg-zinc-100">
           Edit
-        </Link>
+        </button>
         <button onClick={handleDelete} className="px-5 py-1 border rounded-full  ml-10 bg-red-50">
           Delete
         </button>
