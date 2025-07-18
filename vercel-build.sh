@@ -36,3 +36,10 @@ if git diff --quiet HEAD^ HEAD ./project2; then
 else
   echo "Changes detected in project2"
 fi
+
+# Check for changes in the 'project4' folder
+if git diff --quiet HEAD^ HEAD ./project4; then
+  echo "No changes in project4"
+else
+  echo "Changes detected in project4"
+fi
