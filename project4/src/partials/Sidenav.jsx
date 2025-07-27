@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Sidenav = () => {
   
   return (
-    <div className="w-[20%] h-full border-r-2 border-zinc-400 p-10">
+    <div className="w-[20%] min-h-full border-r-2 border-zinc-400 p-10">
       <h1 className="text-white font-bold ">
         <i className="text-[#6556CD] ri-tv-fill  mr-3 text-2xl "></i>
         <span className="text-2xl text-purple-200">CuddleScreen</span>
