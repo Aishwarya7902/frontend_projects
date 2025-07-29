@@ -3,13 +3,15 @@ import { Link, useNavigate } from "react-router-dom";
 import Topnav from "../partials/Topnav";
 import Dropdown from "../partials/Dropdown";
 import axios from "../utils/Axios";
+import Cards from "../partials/Cards";
+import Loading from "./Loading";
 
 const Trending = () => {
   const navigate = useNavigate();
 
   const [category, setCategory] = useState("all");
   const [duration, setDuration] = useState("day");
-  const [trending, setTrending] = useState(null);
+  const [trending, setTrending] = useState([]);
 
   const getTrending = async () => {
     try {
@@ -28,7 +30,7 @@ const Trending = () => {
   }, [category, duration]);
 
 
-  return (
+  return trending ? (
     <div className="px-[3%] w-screen h-screen">
       <div className="w-full flex items-center justify-between">
         <h3 className=" text-2xl text-zinc-400 font-semibold">
@@ -45,8 +47,9 @@ const Trending = () => {
           <Dropdown title="Duration" options={["day", "week"]} func={(e)=>setDuration(e.target.value)} />
         </div>
       </div>
+      <Cards data={trending} title={category}/>
     </div>
-  );
+  ):<Loading/>;
 };
 
 export default Trending;
