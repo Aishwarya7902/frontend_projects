@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './components/Home'
 import Loading from './components/Loading'
+import Trending from './components/Trending'
 
 function App() {
  
@@ -12,6 +13,7 @@ function App() {
     <div className='w-screen min-h-screen bg-[#1F1E24] flex'>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/trending' element={<Trending/>}/>
         
       </Routes>
     </div>
