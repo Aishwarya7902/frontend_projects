@@ -14,6 +14,7 @@ const Trending = () => {
   const [duration, setDuration] = useState("day");
   const [trending, setTrending] = useState([]);
   const [page, setPage] = useState(1);
+  const [hasMore,setHasMore]=useState(true)
 
   const getTrending = async () => {
     try {
@@ -21,9 +22,13 @@ const Trending = () => {
         `/trending/${category}/${duration}?page=${page}`
       );
       // setTrending(data.results);
-      setTrending((prevData) => [...prevData, ...data.results]);
-      setPage((prev) => prev + 1);
-      console.log(data);
+      if (data.results.length > 0) {
+        setTrending((prevData) => [...prevData, ...data.results]);
+        setPage((prev) => prev + 1);
+        console.log(data);
+      }else{
+         setHasMore(false);
+      }
     } catch (error) {
       console.log("error", error);
     }
@@ -66,7 +71,7 @@ const Trending = () => {
         dataLength={trending.length}
         loader={<h1>Loading...</h1>}
         next={getTrending}
-        hasMore={true}
+        hasMore={hasMore}
       >
         <Cards data={trending} title={category} />
       </InfiniteScroll>
