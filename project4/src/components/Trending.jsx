@@ -8,6 +8,7 @@ import Loading from "./Loading";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 const Trending = () => {
+  document.title = "CuddleScreen | Trending";
   const navigate = useNavigate();
 
   const [category, setCategory] = useState("all");
