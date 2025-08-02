@@ -1,23 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import noimage from '/noimage.jpg'
+import noimage from "/noimage.jpg";
 
 const Cards = ({ data, title }) => {
   return (
     <div className="flex flex-wrap w-full m-5 bg-[#1F1E24]">
       {data.map((c, i) => (
-        <Link className="w-[30vh] mr-[5%] mb-[5%]" key={i}>
+        <Link className="relative w-[30vh] mr-[5%] mb-[5%]" key={i}>
           <img
             className="shadow-[8px_17px_38px_2px_rgba(0,0,0,0.5)] h-[40vh] w-full object-cover"
-            src={c.backdrop_path || c.poster_path || c.profile_path? `https://image.tmdb.org/t/p/original/${
+            src={
               c.backdrop_path || c.poster_path || c.profile_path
-            }` :noimage}
+                ? `https://image.tmdb.org/t/p/original/${
+                    c.backdrop_path || c.poster_path || c.profile_path
+                  }`
+                : noimage
+            }
             alt=""
           />
 
           <h3 className="text-xl text-zinc-200 font-semibold mt-3">
             {c.name || c.original_name || c.title || c.original_title}
-         </h3>
+          </h3>
+          <div className="absolute top-[2%] right-[-12%] text-black text-sm font-bold flex items-center justify-center bg-yellow-300 h-10 w-10 rounded-full">
+            <span>
+              {(c.vote_average * 10).toFixed()}
+              <sup className="text-[10px] align-super">%</sup>
+            </span>
+          </div>
         </Link>
       ))}
     </div>
